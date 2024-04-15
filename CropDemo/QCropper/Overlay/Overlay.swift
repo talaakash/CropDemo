@@ -86,17 +86,17 @@ open class Overlay: UIView {
 
     public var cropBox = CropBox(frame: .zero)
 
-    public lazy var translucentMaskView: UIVisualEffectView = {
-        let vev = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
-        vev.backgroundColor = .clear
-        vev.frame = self.bounds
-        vev.isUserInteractionEnabled = false
-        vev.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin, .flexibleHeight, .flexibleWidth]
-        return vev
-    }()
+    public var translucentMaskView: UIVisualEffectView!
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        translucentMaskView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        translucentMaskView.backgroundColor = .clear
+        translucentMaskView.frame = self.bounds
+        translucentMaskView.isUserInteractionEnabled = false
+        translucentMaskView.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin, .flexibleHeight, .flexibleWidth]
+        
 
         backgroundColor = .clear
         clipsToBounds = true

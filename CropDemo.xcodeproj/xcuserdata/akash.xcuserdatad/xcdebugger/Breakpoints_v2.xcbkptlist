@@ -3,4 +3,358 @@
    uuid = "C78AFC10-430F-41E5-8238-A1D7AB4C747E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA479E7F-0223-4FFA-BCF7-8D9484D4288C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "setAspectRatio(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA479E7F-0223-4FFA-BCF7-8D9484D4288C - 4a466487af5101ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.AspectRatioSettable&lt; where &#x3c4;_0_0: CropDemo.CropperViewController&gt;.setAspectRatio(CropDemo.AspectRatio) -&gt; ()"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "AA479E7F-0223-4FFA-BCF7-8D9484D4288C - 4a466487af5101ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.AspectRatioSettable&lt; where &#x3c4;_0_0: CropDemo.CropperViewController&gt;.setAspectRatio(CropDemo.AspectRatio) -&gt; ()"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "2444">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "619C8A78-3142-434A-AE17-B1B4FDB2B624"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "setAspectRatio(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "619C8A78-3142-434A-AE17-B1B4FDB2B624 - 4a466487af510eb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.AspectRatioSettable&lt; where &#x3c4;_0_0: CropDemo.CropperViewController&gt;.setAspectRatio(CropDemo.AspectRatio) -&gt; ()"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1396">
+               </Location>
+               <Location
+                  uuid = "619C8A78-3142-434A-AE17-B1B4FDB2B624 - 4a466487af510eb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.AspectRatioSettable&lt; where &#x3c4;_0_0: CropDemo.CropperViewController&gt;.setAspectRatio(CropDemo.AspectRatio) -&gt; ()"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1896">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "715E02CC-CE80-4F98-8FA7-E5421DE2CE10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Overlay/CropBox.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "715E02CC-CE80-4F98-8FA7-E5421DE2CE10 - bd0ce8833eb5e455"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.CropBox.init(frame: __C.CGRect) -&gt; CropDemo.CropBox"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Overlay/CropBox.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "715E02CC-CE80-4F98-8FA7-E5421DE2CE10 - bd0ce8833eb5eb1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.CropBox.init(frame: __C.CGRect) -&gt; CropDemo.CropBox"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Overlay/CropBox.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F29A2A72-97D3-44B1-98B9-F01196908D03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "viewWillTransition(to:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0661ACDE-1970-4590-8168-60CAB7502AF3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Overlay/Overlay.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0661ACDE-1970-4590-8168-60CAB7502AF3 - 2b3b46d8347403da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.Overlay.init(frame: __C.CGRect) -&gt; CropDemo.Overlay"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Overlay/Overlay.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "0661ACDE-1970-4590-8168-60CAB7502AF3 - 2b3b46d8347403da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.Overlay.init(frame: __C.CGRect) -&gt; CropDemo.Overlay"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Overlay/Overlay.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "2000">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B037F0F-D6C0-47AD-827C-F63E975576B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "init(originalImage:initialState:isCircular:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "049B5A4E-096E-484F-B5C5-A3081C2F9826"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/AspectRatio.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "749D92EC-E9E1-44E1-A078-944FFFB75AAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "setAspectRatioValue(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "749D92EC-E9E1-44E1-A078-944FFFB75AAB - 77f6ac30adbf01eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.AspectRatioSettable&lt; where &#x3c4;_0_0: CropDemo.CropperViewController&gt;.setAspectRatioValue(CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "749D92EC-E9E1-44E1-A078-944FFFB75AAB - 77f6ac30adbf01eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CropDemo.AspectRatioSettable&lt; where &#x3c4;_0_0: CropDemo.CropperViewController&gt;.setAspectRatioValue(CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "CropDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akash/Downloads/IOS/CropDemo/CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36448464-2F75-47DA-BAA2-80F813A05BCA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4E69C31-024E-4E79-8C14-30C123B34421"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/CustomUI/AspectRatioPicker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "setRatio(ratio:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD3CAA26-327D-4CBD-A186-5AB4E9C492D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperProtocols/AspectRatioSettable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "setAspectRatio(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BF9B078-61A3-43E5-970A-9FF38F346C8D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CropDemo/QCropper/Core/CropperProtocols/AngleAssist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "standardizeAngle(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

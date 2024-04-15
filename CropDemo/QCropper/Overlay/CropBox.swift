@@ -21,16 +21,16 @@ open class CropBox: UIView {
         }
     }
 
-    lazy var gridLinesView: Grid = {
-        let view = Grid(frame: bounds)
-        view.backgroundColor = UIColor.clear
-        view.alpha = 0
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleTopMargin, .flexibleBottomMargin, .flexibleBottomMargin, .flexibleRightMargin]
-        return view
-    }()
+    var gridLinesView: Grid!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        gridLinesView = Grid(frame: bounds)
+        gridLinesView.backgroundColor = UIColor.clear
+        gridLinesView.alpha = 0
+        gridLinesView.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleTopMargin, .flexibleBottomMargin, .flexibleBottomMargin, .flexibleRightMargin]
+        
         backgroundColor = UIColor.clear
         clipsToBounds = false
         layer.borderColor = UIColor.white.cgColor

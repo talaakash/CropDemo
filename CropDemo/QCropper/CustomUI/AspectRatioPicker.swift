@@ -56,8 +56,30 @@ public class AspectRatioPicker: UIView {
         }
     }
 
+    var scrollView: UIScrollView!
+    var verticalButton: UIButton!
+    var horizontalButton: UIButton!
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        let boxButtonShortSide: CGFloat = 21
+        let boxButtonLongSide: CGFloat = 31
+        
+        verticalButton = boxButton(size: CGSize(width: boxButtonShortSide, height: boxButtonLongSide))
+        verticalButton.left = (width - boxButtonShortSide - boxButtonLongSide - 15) / 2
+        verticalButton.centerY = 16
+        verticalButton.addTarget(self, action: #selector(verticalButtonPressed(_:)), for: .touchUpInside)
+        
+        horizontalButton = boxButton(size: CGSize(width: boxButtonLongSide, height: boxButtonShortSide))
+        horizontalButton.left = verticalButton.right + 15
+        horizontalButton.centerY = verticalButton.centerY
+        horizontalButton.addTarget(self, action: #selector(horizontalButtonPressed(_:)), for: .touchUpInside)
+
+        scrollView = UIScrollView(frame: self.bounds)
+        scrollView.backgroundColor = .clear
+        scrollView.decelerationRate = .fast
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
 
         addSubview(scrollView)
         // addSubview(horizontalButton)
@@ -67,33 +89,6 @@ public class AspectRatioPicker: UIView {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-
-    let boxButtonShortSide: CGFloat = 21
-    let boxButtonLongSide: CGFloat = 31
-    lazy var horizontalButton: UIButton = {
-        let button = boxButton(size: CGSize(width: boxButtonLongSide, height: boxButtonShortSide))
-        button.left = verticalButton.right + 15
-        button.centerY = verticalButton.centerY
-        button.addTarget(self, action: #selector(horizontalButtonPressed(_:)), for: .touchUpInside)
-        return button
-    }()
-
-    lazy var verticalButton: UIButton = {
-        let button = boxButton(size: CGSize(width: boxButtonShortSide, height: boxButtonLongSide))
-        button.left = (width - boxButtonShortSide - boxButtonLongSide - 15) / 2
-        button.centerY = 16
-        button.addTarget(self, action: #selector(verticalButtonPressed(_:)), for: .touchUpInside)
-        return button
-    }()
-
-    lazy var scrollView: UIScrollView = {
-        let sv = UIScrollView(frame: self.bounds)
-        sv.backgroundColor = .clear
-        sv.decelerationRate = .fast
-        sv.showsHorizontalScrollIndicator = false
-        sv.showsVerticalScrollIndicator = false
-        return sv
-    }()
 
     func reloadScrollView() {
 
@@ -177,6 +172,11 @@ public class AspectRatioPicker: UIView {
 
             delegate?.aspectRatioPickerDidSelectedAspectRatio(selectedAspectRatio)
         }
+    }
+    
+    func setRatio(ratio: AspectRatio){
+        selectedAspectRatio = ratio
+        delegate?.aspectRatioPickerDidSelectedAspectRatio(ratio)
     }
 
     func rotateAspectRatios() {

@@ -15,13 +15,13 @@ class TopBar: UIView {
         return button
     }()
 
-    lazy var rotateButton: UIButton = {
-        let button = self.iconButton(iconName: "rotate.right.fill", isSystemName: true)
-        // button.left = self.flipButton.right
-        button.right = self.flipButton.left
-        button.autoresizingMask = [.flexibleTopMargin, .flexibleRightMargin]
-        return button
-    }()
+//    lazy var rotateButton: UIButton = {
+//        let button = self.iconButton(iconName: "rotate.right.fill", isSystemName: true)
+//        // button.left = self.flipButton.right
+//        button.right = self.flipButton.left
+//        button.autoresizingMask = [.flexibleTopMargin, .flexibleRightMargin]
+//        return button
+//    }()
 
     lazy var aspectRationButton: UIButton = {
         let button = self.iconButton(iconName: "aspectratio.fill", isSystemName: true)
@@ -45,7 +45,7 @@ class TopBar: UIView {
 
         addSubview(blurBackgroundView)
         addSubview(flipButton)
-        addSubview(rotateButton)
+//        addSubview(rotateButton)
 //         addSubview(aspectRationButton)
     }
 
