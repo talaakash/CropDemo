@@ -10,7 +10,7 @@ public enum AspectRatio {
     case original
     case freeForm
     case square
-    case ratio(width: Int, height: Int)
+    case ratio(width: Float, height: Float)
 
     var rotated: AspectRatio {
         switch self {
@@ -58,8 +58,8 @@ extension AspectRatio: Codable {
         default:
             let numberStrings = desc.split(separator: ":")
             if numberStrings.count == 2,
-                let width = Int(numberStrings[0]),
-                let height = Int(numberStrings[1]) {
+                let width = Float(numberStrings[0]),
+                let height = Float(numberStrings[1]) {
                 self = .ratio(width: width, height: height)
             } else {
                 self = .freeForm

@@ -25,7 +25,7 @@ extension ViewController {
     /// - Parameter image: UIImage type, pass original image for crop
     func openCropView(image: UIImage) {
         // create crop viewcontroller object
-        let cropViewController = CropperViewController(originalImage: image)
+        let cropViewController = CropperViewController(originalImage: image, ratio: .ratio(width: 1.37, height: 1.77))
         // set delegate
         cropViewController.delegate = self
         // present crop viewcontroller

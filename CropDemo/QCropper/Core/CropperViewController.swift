@@ -33,11 +33,13 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
     public let originalImage: UIImage
     var initialState: CropperState?
     var isCircular: Bool
+    var selectedAspectRatio: AspectRatio?
 
-    public init(originalImage: UIImage, initialState: CropperState? = nil, isCircular: Bool = false) {
+    public init(originalImage: UIImage, ratio: AspectRatio? = nil, initialState: CropperState? = nil, isCircular: Bool = false) {
         self.originalImage = originalImage
         self.initialState = initialState
         self.isCircular = isCircular
+        self.selectedAspectRatio = ratio
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .fullScreen
     }
@@ -281,9 +283,10 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
             }
         }
         if !isCircular{
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-            self.aspectRatioPicker.setRatio(ratio: .ratio(width: 20, height: 10))
-//            })
+            guard let ratio = selectedAspectRatio else {
+                return
+            }
+            self.aspectRatioPicker.setRatio(ratio: ratio)
         }
     }
 
@@ -514,6 +517,8 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
         aspectRatioPicker.rotated = false
         aspectRatioPicker.selectedAspectRatio = .freeForm
         updateButtons()
+        guard let ratio = selectedAspectRatio else{ return }
+        aspectRatioPicker.setRatio(ratio: ratio)
     }
 
     func updateButtons() {
