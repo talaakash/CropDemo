@@ -34,12 +34,16 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
     var initialState: CropperState?
     var isCircular: Bool
     var selectedAspectRatio: AspectRatio?
+    var minFaceSize: CGFloat?
+    var maxFaceSize: CGFloat?
 
-    public init(originalImage: UIImage, ratio: AspectRatio? = nil, initialState: CropperState? = nil, isCircular: Bool = false) {
+    public init(originalImage: UIImage, ratio: AspectRatio? = nil, minFaceSize: CGFloat? = nil, maxFaceSize: CGFloat? = nil, initialState: CropperState? = nil, isCircular: Bool = false) {
         self.originalImage = originalImage
         self.initialState = initialState
         self.isCircular = isCircular
         self.selectedAspectRatio = ratio
+        self.minFaceSize = minFaceSize
+        self.maxFaceSize = maxFaceSize
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .fullScreen
     }

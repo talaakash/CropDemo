@@ -39,6 +39,8 @@
 		2D58FFD92A14A7E4007DA980 /* ARImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D58FFD82A14A7E4007DA980 /* ARImage.png */; };
 		2D58FFDB2A14F873007DA980 /* horizontal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D58FFDA2A14F873007DA980 /* horizontal.jpg */; };
 		2D6F23982A164A550084CA8B /* ViewController+CropperViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F23972A164A550084CA8B /* ViewController+CropperViewControllerDelegate.swift */; };
+		38F54ADB2C00A88F008D723A /* Photo_One.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38F54AD92C00A88F008D723A /* Photo_One.jpg */; };
+		38F54ADC2C00A88F008D723A /* sample1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38F54ADA2C00A88F008D723A /* sample1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		2D58FFD82A14A7E4007DA980 /* ARImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARImage.png; sourceTree = "<group>"; };
 		2D58FFDA2A14F873007DA980 /* horizontal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horizontal.jpg; sourceTree = "<group>"; };
 		2D6F23972A164A550084CA8B /* ViewController+CropperViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CropperViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		38F54AD92C00A88F008D723A /* Photo_One.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Photo_One.jpg; sourceTree = "<group>"; };
+		38F54ADA2C00A88F008D723A /* sample1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				2D6F23972A164A550084CA8B /* ViewController+CropperViewControllerDelegate.swift */,
 				2D58FF852A14A611007DA980 /* Main.storyboard */,
 				2D58FFD82A14A7E4007DA980 /* ARImage.png */,
+				38F54AD92C00A88F008D723A /* Photo_One.jpg */,
+				38F54ADA2C00A88F008D723A /* sample1.jpg */,
 				2D58FFDA2A14F873007DA980 /* horizontal.jpg */,
 				2D58FF882A14A613007DA980 /* Assets.xcassets */,
 				2D58FF8A2A14A613007DA980 /* LaunchScreen.storyboard */,
@@ -252,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D58FF8C2A14A613007DA980 /* LaunchScreen.storyboard in Resources */,
+				38F54ADB2C00A88F008D723A /* Photo_One.jpg in Resources */,
 				2D58FF892A14A613007DA980 /* Assets.xcassets in Resources */,
+				38F54ADC2C00A88F008D723A /* sample1.jpg in Resources */,
 				2D58FF872A14A611007DA980 /* Main.storyboard in Resources */,
 				2D58FFDB2A14F873007DA980 /* horizontal.jpg in Resources */,
 				2D58FFD92A14A7E4007DA980 /* ARImage.png in Resources */,

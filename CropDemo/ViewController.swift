@@ -25,7 +25,7 @@ extension ViewController {
     /// - Parameter image: UIImage type, pass original image for crop
     func openCropView(image: UIImage) {
         // create crop viewcontroller object
-        let cropViewController = CropperViewController(originalImage: image, ratio: .ratio(width: 1.37, height: 1.77))
+        let cropViewController = CropperViewController(originalImage: image, ratio: .ratio(width: 1.96, height: 2.75), minFaceSize: 1.22, maxFaceSize: 1.41)
         // set delegate
         cropViewController.delegate = self
         // present crop viewcontroller
@@ -50,7 +50,7 @@ extension ViewController {
     /// - Parameter sender: UIButton type
     @IBAction func onCrop(_ sender : UIButton) {
         // 0 - HCrop, 1 - VCrop
-        let name = sender.tag == 0 ? "ARImage.png" : "horizontal.jpg"
+        let name = sender.tag == 0 ? "sample1.jpg" : "Photo_One.jpg"
         guard let image = UIImage(named: name) else { return }
         
         self.openCropView(image: image)
