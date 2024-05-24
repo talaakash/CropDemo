@@ -202,6 +202,10 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
         picker.delegate = self
         return picker
     }()
+    
+    var faceArea : UIView!
+    var maxArea: UIView!
+    var chinLine: UIView!
 
     @objc
     func angleRulerValueChanged(_: AnyObject) {
@@ -233,6 +237,15 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
     open override func viewDidLoad() {
         super.viewDidLoad()
 
+        faceArea = UIView()
+        maxArea = UIView()
+        chinLine = UIView()
+        chinLine.backgroundColor = .black
+        maxArea.backgroundColor = .green.withAlphaComponent(0.3)
+        faceArea.addSubview(maxArea)
+        faceArea.addSubview(chinLine)
+        faceArea.backgroundColor = .clear
+        
         navigationController?.navigationBar.isHidden = true
         view.clipsToBounds = true
 
@@ -264,6 +277,7 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
         view.addSubview(backgroundView)
         view.addSubview(bottomView)
         view.addSubview(topBar)
+        view.addSubview(faceArea)
     }
 
     open override func viewDidLayoutSubviews() {
@@ -292,6 +306,27 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
             }
             self.aspectRatioPicker.setRatio(ratio: ratio)
         }
+
+        let ratio = selectedAspectRatio?.description
+        let ratioData = ratio?.split(separator: ":")
+        let ratioArray = ratioData?.compactMap({ String($0) })
+        let heightRatio = Double(ratioArray?[1] ?? "1") ?? 1.0
+        
+        let boxHeight = cropBoxFrame.height
+        
+        var maxFaceHeight = (Float(maxFaceSize ?? 1) - Float(minFaceSize ?? 1)) * 72.10
+        var height = maxFaceSize ?? 1 * 72.10
+        if let maxFaceSize, let minFaceSize{
+            height = (maxFaceSize * boxHeight) / heightRatio
+            maxFaceHeight = Float(((maxFaceSize - minFaceSize) * height)) / Float(maxFaceSize)
+        }
+        let width = cropBoxFrame.width
+        let xPosition = cropBoxFrame.origin.x
+        let yPosition = (cropBoxFrame.origin.y + (cropBoxFrame.size.height / 2)) - (height / 2)
+        
+        faceArea.frame = CGRect(x: xPosition, y: yPosition, width: width, height: height)
+        maxArea.frame = CGRect(x: 0, y: 0, width: width, height: CGFloat(maxFaceHeight))
+        chinLine.frame = CGRect(x: 0, y: height, width: width, height: 2)
     }
 
     open override var prefersStatusBarHidden: Bool {
@@ -331,6 +366,7 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
             overlay.gridLinesAlpha = 1
             topBar.isUserInteractionEnabled = false
             bottomView.isUserInteractionEnabled = false
+            faceArea.alpha = 0
         }
 
         if pan.state == .ended || pan.state == .cancelled {
@@ -338,6 +374,7 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
                 self.matchScrollViewAndCropView(animated: true, targetCropBoxFrame: self.overlay.cropBoxFrame, extraZoomScale: 1, blurLayerAnimated: true, animations: {
                     self.overlay.gridLinesAlpha = 0
                     self.overlay.blur = true
+                    self.faceArea.alpha = 1
                 }, completion: {
                     self.topBar.isUserInteractionEnabled = true
                     self.bottomView.isUserInteractionEnabled = true
